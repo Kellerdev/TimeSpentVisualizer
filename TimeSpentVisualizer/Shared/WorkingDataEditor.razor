@@ -1,0 +1,23 @@
+﻿<div class="form-field">
+    <label>Date</label>
+    <div>
+        <InputDate @bind-Value="WorkingData.Date" />
+    </div>
+</div>
+<div class="form-field">
+    <label>From</label>
+    <div>
+        <InputDate @bind-Value="WorkingData.FromOrg" />
+    </div>
+</div>
+<div class="form-field">
+    <label>To</label>
+    <div>
+        <InputDate @bind-Value="WorkingData.ToOrg" />
+    </div>
+</div>
+
+
+@code {
+    [Parameter] public WorkingData WorkingData { get; set; }
+}
